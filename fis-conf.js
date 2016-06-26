@@ -15,7 +15,7 @@ fis
       margin: 1
     }),
     postpackager: [
-      fis.plugin("loader"), // 影响data-fixed
+      fis.plugin("loader"), // 影响data-fixed。注释掉这行则正常了
       fis.plugin('replace', {
         '/src/index.html': {
           '__NODE_ENV': "\"dev\""
