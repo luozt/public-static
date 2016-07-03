@@ -1,9 +1,16 @@
-
+import { enableProdMode } from '@angular/core';
+import { HTTP_PROVIDERS } from '@angular/http';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
+import { ROUTER_PROVIDERS } from '@angular/router-deprecated';
+
 import { AppComponent } from './app/app.component';
-import { AppService } from './app/app.service';
+
+if('lc' === window.NODE_ENV){
+  enableProdMode();
+}
 
 bootstrap(AppComponent, [
-  AppService
+  HTTP_PROVIDERS,
+  ROUTER_PROVIDERS
 ]);

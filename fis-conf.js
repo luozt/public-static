@@ -207,6 +207,9 @@ fis.media('lc')
       type: "pngquant"
     })
   })
+  // .match('src/(**)', {
+  //   release: '$1'
+  // })
   .match('**', {
     relative: true,
     deploy: [fis.plugin('encoding'),fis.plugin('local-supply', {
@@ -317,6 +320,16 @@ fis.media("pu")
   })
   .match("tpls/**.{jade,html}", {
     useHash: true
+  })
+  .match("::package", {
+    postpackager: [
+      fis.plugin("loader"),
+      fis.plugin('replace', {
+        '/src/index.html': {
+          '__NODE_ENV': "\"pu\""
+        }
+      })
+    ]
   })
   .match("**", {
     deploy: fis.plugin("http-push", {
