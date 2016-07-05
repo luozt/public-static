@@ -1,6 +1,6 @@
 var test = function(){
   console.log(
   	'continue win7'+
-  	'haode'
+  	'190238934783487'
   	);
 }
