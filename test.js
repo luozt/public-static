@@ -1,3 +1,3 @@
 var test = function(){
-  console.log('win7: this is a log--testä½ è¯´å‘¢ï¼Œokå§');
+  console.log('continue win7: this is a log--test--ok ÄãËµÄØ£¬ok°É');
 }
