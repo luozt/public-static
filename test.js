@@ -1,3 +1,5 @@
 var test = function(){
-  console.log('continue win7: this is a log--test--ok ÄãËµÄØ£¬ok°É');
+  console.log('continue win10:',
+    'haode, this is win10'
+  );
 }
