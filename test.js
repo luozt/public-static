@@ -1,3 +1,3 @@
 var test = function(){
-  console.log('win10: this is a log-2');
+  console.log('win7: this is a log--test');
 }
