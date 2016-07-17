@@ -1,0 +1,24 @@
+/** 雪碧图配置 */
+.sprite-item(@basename, @ext, @width, @height){
+  background-image: url("../../img/sprites1/@{basename}@{ext}?__sprite");
+  width: @width*1px;
+  height: @height*1px;
+}
+
+
+.sprite-01{.sprite-item("_01",".png",21,21);}
+.sprite-02{.sprite-item("_02",".png",23,23);}
+.sprite-03{.sprite-item("_03",".png",23,23);}
+.sprite-04{.sprite-item("_04",".png",22,22);}
+.sprite-05{.sprite-item("_05",".png",21,21);}
+.sprite-06{.sprite-item("_06",".png",23,23);}
+.sprite-07{.sprite-item("_07",".png",23,23);}
+.sprite-08{.sprite-item("_08",".png",22,22);}
+.sprite-09{.sprite-item("_09",".png",44,44);}
+.sprite-10{.sprite-item("_10",".png",21,16);}
+.sprite-11{.sprite-item("_11",".png",16,17);}
+.sprite-12{.sprite-item("_12",".png",15,11);}
+.sprite-13{.sprite-item("_13",".png",14,14);}
+.sprite-checked{.sprite-item("_checked",".png",15,15);}
+.sprite-part-checked{.sprite-item("_part-checked",".png",15,15);}
+.sprite-unchecked{.sprite-item("_unchecked",".png",15,15);}
